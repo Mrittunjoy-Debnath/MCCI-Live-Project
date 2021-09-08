@@ -1,0 +1,19 @@
+.bdr {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url('../images/v0.png');
+}
+
+.b-img {
+    background-image: url('../images/9.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover cover; */
+    background-size: 100% 100%;
+}
+
+.l-img {
+    background-image: url('../images/l.png');
+    background-repeat: no-repeat;
+    /* background-size: cover cover; */
+    background-size: 100% 100%;
+}

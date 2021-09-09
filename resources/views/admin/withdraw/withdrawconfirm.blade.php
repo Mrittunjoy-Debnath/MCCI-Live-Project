@@ -23,8 +23,8 @@
                   <h5 class="card-title">Phone : {{ $users->phone }}</h5>
                   <h5 class="card-title">Bikash : {{ $users->bikash }} </h5>
                   <h5 class="card-title">Invest :{{ $users->invest }} </h5>
-                  <h5 class="card-title">Task : {{ $users->balance }}</h5>
-                  <h5 class="card-title">Withdraw  : {{ $users->withdraw }}</h5>
+                  {{-- <h5 class="card-title">Task : {{ $users->balance }}</h5>
+                  <h5 class="card-title">Withdraw  : {{ $users->withdraw }}</h5> --}}
                   <h5 class="card-title">Total :{{ $users->total_balance }} </h5>
 
                   <form class="form-horizontal" action="{{ route('withdraw-admin',$users->id) }}" method="post">

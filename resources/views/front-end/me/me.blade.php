@@ -36,35 +36,35 @@
 <div class="row bg-light mx-4">
 <div class="col-md-6">
 <div class="card mb-3 " style="border:5px solid pink; border-radius:10px;">
-  <a class="#" href="{{ route('name.address') }}" style="text-decoration:none; color:skyblue; font-size:60px;position:relative; bottom:center;right:center;left:275px;"><i class="far fa-address-card"></i></a>
+  <a class="#" href="{{ route('name.address') }}" style="text-decoration:none; color:skyblue; font-size:60px;position:relative; bottom:center;right:center;left:45%;"><i class="far fa-address-card"></i></a>
   <p class="text-center">Personal info</p>
 </div>
 </div>
 
 <div class="col-md-6">
 <div class="card mb-3 " style="border:5px solid pink; border-radius:10px;">
-  <a class="#" href="{{ route('bank.account') }}" style="text-decoration:none; color:purple; font-size:60px;position:relative; bottom:center;right:center;left:275px;"><i class="far fa-address-book"></i></a>
+  <a class="#" href="{{ route('bank.account') }}" style="text-decoration:none; color:purple; font-size:60px;position:relative; bottom:center;right:center;left:45%;"><i class="far fa-address-book"></i></a>
   <p class="text-center">Bank account</p>
 </div>
 </div>
 
 <div class="col-md-6">
 <div class="card mb-3 " style="border:5px solid pink; border-radius:10px;">
-  <a class="#" href="{{ route('task.withdraw') }}" style="text-decoration:none; color:yellow; font-size:60px;position:relative; bottom:center;right:center;left:275px;"><i class="fas fa-file-invoice-dollar"></i></a>
+  <a class="#" href="{{ route('task.withdraw') }}" style="text-decoration:none; color:yellow; font-size:60px;position:relative; bottom:center;right:center;left:45%;"><i class="fas fa-file-invoice-dollar"></i></a>
   <p class="text-center">Withdrawal</p>
 </div>
 </div>
 
 <div class="col-md-6">
 <div class="card mb-3 " style="border:5px solid pink; border-radius:10px;">
-  <a class="#" href="{{route('total.income')}}" style="text-decoration:none; color:brown; font-size:60px;position:relative; bottom:center;right:center;left:275px;"><i class="fas fa-history"></i></a>
+  <a class="#" href="{{route('total.income')}}" style="text-decoration:none; color:brown; font-size:60px;position:relative; bottom:center;right:center;left:45%;"><i class="fas fa-history"></i></a>
   <p class="text-center">Income details</p>
 </div>
 </div>
 
 <div class="col-md-6">
 <div class="card mb-3 " style="border:5px solid pink; border-radius:10px;">
-  <a class="#" href="{{route('task')}}" style="text-decoration:none; color:brown; font-size:60px;position:relative; bottom:center;right:center;left:275px;"><i class="fas fa-cloud-download-alt"></i></a>
+  <a class="#" href="{{route('task')}}" style="text-decoration:none; color:brown; font-size:60px;position:relative; bottom:center;right:center;left:45%;"><i class="fas fa-cloud-download-alt"></i></a>
   <p class="text-center">APP Download</p>
 </div>
 </div>
@@ -73,7 +73,7 @@
 <div class="card mb-3 " style="border:5px solid pink; border-radius:10px;">
   <a class="#" href="{{route('logout')}}"
   onclick="event.preventDefault();
-  document.getElementById('logout-form').submit();" style="text-decoration:none; color:green; font-size:60px;position:relative; bottom:center;right:center;left:275px;"><i class="fas fa-power-off"></i></a>
+  document.getElementById('logout-form').submit();" style="text-decoration:none; color:green; font-size:60px;position:relative; bottom:center;right:center;left:45%;"><i class="fas fa-power-off"></i></a>
 
   <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
     @csrf

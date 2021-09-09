@@ -38,10 +38,10 @@
 <div class="container-fluid">
     <div class="row bg-info text-center p-1">
       <div class="col-md-1"></div>
-        <div class="col-md-2  p-3">
+        <div class="col-md-2  p-3 f-res">
             <a class="ml-2" href="{{route('deposit')}}"  style="text-decoration:none; color:black; font-size:40px; line-height:10px;"><i class="far fa-file-alt"></i><br><span style="font-size:14px;">Deposit</span></a>
 </div>
-<div class="col-md-2 ml-5 p-3">
+<div class="col-md-2 ml-5 p-3 f-res">
             <a class="ml-2" href="{{route('vip')}}"  style="text-decoration:none; color:black; font-size:40px; line-height:10px;"><i class="far fa-gem"></i></i><br><span style="font-size:14px;">VIP</span></a>
 </div>
 {{-- <div class="col-md-2 ml-5 p-3">
@@ -162,23 +162,23 @@
 <hr>
 <div class="row bg-info fixed-bottom pt-1">
   <div class="col-md-1"></div>
-  <div class="col-md-2 text-center">
+  <div class="col-md-2 col-sm-2 col-xs-2 text-center f-res">
   <a class="ml-1" href="{{url('/home')}}"  style="text-decoration:none; color:black; font-size:40px;line-height:10px;"><i class="fas fa-home"></i> <br> <span style="font-size:14px;">Home</span></a>
 </div>
 
-<div class="col-md-2 text-center">
+<div class="col-md-2 col-sm-2 col-xs-2 text-center f-res">
   <a class="ml-1" href="{{url('/vip')}}"  style="text-decoration:none; color:black; font-size:40px;line-height:10px;"><i class="far fa-gem"></i> <br> <span style="font-size:14px;">VIP</span></a>
 </div>
 
-<div class="col-md-2 text-center">
+<div class="col-md-2 col-sm-2 col-xs-2 text-center f-res">
   <a class="ml-1" href="{{url('/task')}}" style="text-decoration:none; color:black; font-size:40px;line-height:10px;"><i class="fab fa-wpforms"></i> <br> <span style="font-size:14px;">Tasks</span></a>
 </div>
 
-<div class="col-md-2 text-center">
+<div class="col-md-2 col-sm-2 col-xs-2 text-center f-res">
   <a class="ml-1" href="{{url('/home')}}"  style="text-decoration:none; color:black; font-size:40px;line-height:10px;"><i class="fas fa-clock"></i> <br> <span style="font-size:14px;">Records</span></a>
 </div>
 
-<div class="col-md-2 text-center">
+<div class="col-md-2 col-sm-2 col-xs-2 text-center f-res">
   <a class="ml-1" href="{{url('/me')}}"  style="text-decoration:none; color:black; font-size:40px;line-height:10px;"><i class="far fa-user"></i><br> <span style="font-size:14px;">Me</span></a>
 </div>
 </div>

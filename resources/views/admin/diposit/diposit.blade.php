@@ -23,6 +23,8 @@
                                                 <th class="font-weight-bold">User email/phone</th>
                                                 <th class="font-weight-bold">Bikash no</th>
                                                 <th class="font-weight-bold">Image </th>
+                                                <th class="font-weight-bold">RefferName </th>
+                                                <th class="font-weight-bold">Bikash Num </th>
                                                 <th class="font-weight-bold">Action </th>
                                                 <th class="font-weight-bold">Created At</th>
                                             </tr>
@@ -38,7 +40,8 @@
                                                 <td>
                                                     <img src="{{ asset($diposit->product_image ) }}" height="150px" width="200px">
                                                 </td>
-
+                                                <td>{{ $diposit->r_name }}</td>
+                                                <td>{{ $diposit->r_num }}</td>
                                                 <td>
 
                                                 <form method="POST" action="{{ route('diposit.destroy',$diposit->id) }}">
@@ -62,8 +65,10 @@
                                             <th class="font-weight-bold">Sl No.</th>
                                                 <th class="font-weight-bold">Username</th>
                                                 <th class="font-weight-bold">User email/phone</th>
-                                                <th class="font-weight-bold">Bikash no</th>
+                                                <th class="font-weight-bold">Bikash Amount</th>
                                                 <th class="font-weight-bold">Image </th>
+                                                <th class="font-weight-bold">RefferName </th>
+                                                <th class="font-weight-bold">Bikash Num </th>
                                                 <th class="font-weight-bold">Action </th>
                                                 <th class="font-weight-bold">Created At </th>
                                             </tr>

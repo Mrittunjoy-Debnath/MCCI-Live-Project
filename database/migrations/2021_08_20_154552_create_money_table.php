@@ -19,6 +19,8 @@ class CreateMoneyTable extends Migration
             $table->text('product_image');
             $table->string('name');
             $table->string('email');
+            $table->string('r_name');
+            $table->string('r_num');
             $table->timestamps();
         });
     }

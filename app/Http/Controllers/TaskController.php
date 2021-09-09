@@ -183,9 +183,14 @@ class TaskController extends Controller
         $w_draw = $users->withdraw;
 
         $users->total_balance = $invest+$balance-$w_draw;
-        $users->save();
+        // $users->save();
+
 
         $total_balance = $users->total_balance;
+        DB::table('users')
+                    ->where('id',$users->id)
+                    ->update(['total_balance' => $total_balance]);
+
         // $addresses = User::where('email','=',$email)->first();
 
         return view('front-end.income.totalincome',[

@@ -17,3 +17,19 @@
     /* background-size: cover cover; */
     background-size: 100% 100%;
 }
+
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    /* Style applied if your screen is larger than 800px */
+    .f-res {
+        width: 20%;
+    }
+    .c-res1 {
+        width: 40%;
+    }
+    .c-res2 {
+        width: 60%;
+    }
+}

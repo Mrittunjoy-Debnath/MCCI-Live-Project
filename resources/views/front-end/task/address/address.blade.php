@@ -70,9 +70,11 @@
                                         <h4 class="card-title text-center">Information</h4>
 
                                         <div class="form-group row">
+                                            <div class="col-sm-5 c-res1">
                                             <lebel class="col-sm-3 text-right control-lebel col-form-lebel">Username </lebel>
+                                            </div>
 
-                                            <div class="col-sm-7">
+                                            <div class="col-sm-7 c-res2">
                                             <lebel class="col-sm-3 text-right control-lebel col-form-lebel">{{ $address->name }}</lebel>
                                             </div>
 
@@ -80,9 +82,10 @@
 
 
                                         <div class="form-group row">
+                                            <div class="col-sm-5 c-res1">
                                             <lebel class="col-sm-3 text-right control-lebel col-form-lebel">Email/phone </lebel>
-
-                                            <div class="col-sm-7">
+                                            </div>
+                                            <div class="col-sm-7 c-res2">
                                             <lebel class="col-sm-3 text-right control-lebel col-form-lebel">{{ $address->email }}</lebel>
                                             </div>
 
@@ -91,17 +94,21 @@
 
 
                                         <div class="form-group row">
+                                            <div class="col-sm-5 c-res1"
                                             <lebel class="col-sm-3 text-right control-lebel col-form-lebel">Email/Phone </lebel>
-                                            <div class="col-sm-7">
+                                            </div>
+                                            <div class="col-sm-7 c-res2">
                                             <lebel class="col-sm-3 text-right control-lebel col-form-lebel">{{ $address->phone }}</lebel>
                                             </div>
                                         </div>
 
 
                                         <div class="form-group row">
-                                            <lebel class="col-sm-3 text-right control-lebel col-form-lebel">Bikash no </lebel>
-                                            <div class="col-sm-7">
-                                            <lebel class="col-sm-3 text-right control-lebel col-form-lebel">{{ $address->bikash }}</lebel>
+                                            <div class="col-sm-5 c-res1">
+                                            <lebel class="col-sm-3 c-res text-right control-lebel col-form-lebel">Bikash no </lebel>
+                                            </div>
+                                            <div class="col-sm-7 c-res2">
+                                            <lebel class="col-sm-3 c-res text-right control-lebel col-form-lebel">{{ $address->bikash }}</lebel>
                                             </div>
                                         </div>
 
@@ -112,7 +119,7 @@
                                             </div>
                                         </div> --}}
 
-
+                                        <a class="btn btn-outline-primary text-center" href="{{ route('home') }}" role="button">Go Home</a>
                                     </div>
 
                                     @endforeach

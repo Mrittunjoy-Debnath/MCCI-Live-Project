@@ -15,6 +15,8 @@ class MoneyController extends Controller
         $this->validate($request,[
             'bikash' => 'required',
             'product_image' => 'required',
+            'r_name' => 'required',
+            'r_num' => 'required',
         ]);
 
 
@@ -34,6 +36,9 @@ class MoneyController extends Controller
 
         $money = new Money();
         $money->bikash = $request->bikash ;
+        $money->r_name = $request->r_name;
+        $money->r_num = $request->r_num;
+
         $money->product_image=$imageUrl;
 
 
@@ -47,10 +52,13 @@ class MoneyController extends Controller
         $money->email = $users->email;
         $money->save();
 
-        $users->invest =$users->invest + $request->bikash ;
+        $invest =$users->invest + $request->bikash ;
 
-        $users->save();
+        // $users->save();
 
+        DB::table('users')
+                    ->where('id',$users->id)
+                    ->update(['invest' => $invest]);
 
 
         // $request->image->store('images','public');

@@ -42,10 +42,22 @@ class TaskController extends Controller
         $withdraw =$users->withdraw + $request->w_taka_c;
 
         DB::table('users')
-                    ->where('id',$id)
-                    ->update(['withdraw' => $withdraw]);
+        ->where('id',$id)
+        ->update(['withdraw' => $withdraw]);
 
-        $total = $users->total_balance-$users->withdraw;
+
+        // $total = $users->total_balance-$withdraw;
+
+        $users = DB::table('users')
+        ->where('id',$id)->first();
+
+        $invest = $users->invest;
+        $balance = $users->balance;
+        $w_draw = $users->withdraw;
+
+
+
+        $total = $invest+$balance-$w_draw;
 
         DB::table('users')
                     ->where('id',$id)

@@ -17,7 +17,7 @@
               <p class="card-text text-center"> Withdraw Bal: {{ $w_draw }}</p>
 
               <p class="card-text font-weight-bold text-center">Now your total balance is </p>
-              <h4 class="text-center font-weight-bold">Total : {{ $balance }} Taka</h4>
+              <h4 class="text-center font-weight-bold">Total : {{ $balance-$w_draw }} Taka</h4>
 
               <a class="btn btn-outline-primary text-center" href="{{ route('home') }}" role="button">Go Home</a>
 

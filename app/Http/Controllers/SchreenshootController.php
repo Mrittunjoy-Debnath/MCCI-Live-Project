@@ -68,8 +68,18 @@ class SchreenshootController extends Controller
         //       ->where('id', 3)
         //       ->update(['balance' => $bal]);
 
-        $users->balance =$users->balance+ 5;
-        $users->save();
+        $bal =$users->balance+ 5;
+        $total = $users->total_balance+5;
+        $id = $users->id;
+
+            DB::table('users')
+                    ->where('id', $id)
+                    ->update(['balance' => $bal,'total_balance'=>$total]);
+
+
+
+
+        // $users->save();
 
         $screenShoot->save();
 
